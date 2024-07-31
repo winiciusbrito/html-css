@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+
+        @font-face {
+            font-family: 'DKN';
+            src: url(font/deadknight/Deadknight.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /* Tipos de format() 
+               - opentype (otf)
+               - truetype (ttf)
+               - embedded-opentype
+               - truetype-aat (Apple Advanced Typography)
+               - svg
+            */
+        }
+
+        @font-face {
+            /* Define o nome qualquer */
+            font-family: 'Musashi';
+            /* Localização de arquivo e tipo do arquivo selecionado */
+            src: url(font/musashi_2/MUSASHI.ttf) format('truetype');
+        }
+
+        body {
+            font-family: 'DKN', Arial , Helvetica, sans-serif;            
+            font-size: 0.8em;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: 'Musashi', 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Testando a fonte baseado arquivo externo importando os arquivos fora do site para especificar a fonte desejado no seu site.</p>
+</body>
+</html>

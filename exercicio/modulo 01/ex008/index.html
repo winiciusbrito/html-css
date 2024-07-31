@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!-- pre: pré-formatação da digitação no seu código ou texto, ou seja, tudo está escrito será representado do mesmo jeito -->
+    <!-- code: é uma formatação chamado code dentro do texto que fica mais 'visível' de ler -->
+    <pre>
+        <code>
+    num = int(input('Digite um número:'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <!-- quando define algo chamado citação (importante) utiliza a tag chamado 'q' -->
+    <!-- se caso for utilizado entre aspas "" que não é citação, então não utilizada a tag 'q' -->
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <h2>Citações completas</h2>
+    <p>Segundo site estudo e referência da linguagem de programação: </p>
+    <!-- blockquote: é uma citação em 'formato do bloco' -->
+    <!-- cite: é uma referência de quem é esse autor ou dono nessa citação. Isso facilita o mecanismo de busca -->
+    <blockquote cite="https://www.w3schools.com/">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <!-- abbr: é uma abreviação quando o curso passa em cima do texto, aparece um texto flutuante por causa do abbr -->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou aprendendo!</p>
+    <h2>Texto Invertido</h2>    
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>
