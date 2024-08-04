@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {            
+            margin: 10px 10px 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="get" autocomplete="on">
+
+        <div>
+            <fieldset>
+                <legend>Sexo</legend>
+                <!-- No input radio o 'variável' do atributo chamado name tem que ser igual -->
+                <input type="radio" name="sexo" id="sexf" value="feminino" checked><label for="sexf">Feminino</label><br>
+                <input type="radio" name="sexo" id="sexm" value="masculino"><label for="sexm">Masculino</label><br>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <div>
+                    <input type="checkbox" name="es-bas" id="i-es-bas" checked> <label for="i-es-bas">Basquete</label> <br>
+                    <input type="checkbox" name="es-fut" id="i-es-fut"> <label for="i-es-fut">Futebol</label> <br>
+                    <input type="checkbox" name="es-nat" id="i-es-nat"> <label for="i-es-nat">Natação</label> <br>
+                    <input type="checkbox" name="es-ten" id="i-es-ten"> <label for="i-es-ten">Tênis</label> <br>
+                    <input type="checkbox" name="es-jud" id="i-es-jud"> <label for="i-es-jud">Judô</label> <br>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

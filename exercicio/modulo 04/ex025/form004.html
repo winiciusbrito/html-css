@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {            
+            margin: 10px 10px 10px 0px;
+        }
+
+        input {
+            width: 250px;
+        }
+
+        input.button {
+            width: 100px;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="get" autocomplete="on">
+        <!-- fieldset: Agrupamento do Conteúdo -->
+        <fieldset>
+            <!-- Legenda do Agrupamento do Conteúdo -->
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite o primeiro nome" minlength="4" maxlength="30" required>
+            </div>
+            <div>
+                <label for="isbnome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isbnome" minlength="4" maxlength="40" placeholder="Digite o restante do sobrenome" required>
+            </div>
+            <div>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite o seu e-mail" required>
+            </div>
+            <div>
+                <label for="itel">Telefone:</label>
+                <!-- Estudar mais sobre RegEx -->
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx)xxxxx-xxxx" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" required>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Limpar" class="button">
+        </div>
+    </form>
+</body>
+</html>
