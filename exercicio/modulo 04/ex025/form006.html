@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {            
+            margin: 10px 10px 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="post" autocomplete="on">
+        <div>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#0000ff">
+        </div>
+
+        <div>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+        </div>
+
+        <div>
+            <!-- Quando for utilizar o elemento que enviar os arquivos como: png, txt, jpg, etc... -->
+            <!-- Sempre utilize utilize o método post -->
+            <!-- O método get tem limitação em abaixo de 3.000 bytes, convertido em: 3MB -->
+            <label for="ifoto">Fotos do Perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
