@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+:root {
+    --cor-fundo: #afafaf;
+    --cor-font: #000000;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-font);
+}
