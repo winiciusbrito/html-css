@@ -23,7 +23,10 @@ menu {
 }
 
 article::after {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
     content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+
+p {
+    font-size: 0.8em;
 }
