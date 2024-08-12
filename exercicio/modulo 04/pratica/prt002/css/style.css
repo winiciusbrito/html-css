@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {        
+    width: 30vw;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+div {
+    width: 30vw;
+    margin: auto;
+    padding: 5px;
+    text-align: center;   
+}
+
+input#button {    
+    padding: 10px;
+}
