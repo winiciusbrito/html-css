@@ -1,27 +1,81 @@
 @charset "UTF-8";
 
 * {
+    margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #000036;
+}
+
 h1 {
+    padding: 20px;
     text-align: center;
+    color: #ffffff;
 }
 
-fieldset {        
-    width: 30vw;
+fieldset {
+    width: 90vw;
     margin: auto;
-    margin-top: 25px;
     padding: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 5px #ffffff;
 }
 
-div {
-    width: 30vw;
-    margin: auto;
-    padding: 5px;
-    text-align: center;   
+legend {
+    padding: 0px 5px;
+    background-color: #000036;
+    color: #ffffff;
 }
 
-input#button {    
-    padding: 10px;
+label, input {
+    width: 280px;
+    display: block;
+    margin: 5px auto;
+    padding: 3px;    
+}
+
+label {
+    color: #ffffff;
+    text-shadow: 0px 0px 1px #ffffff;
+}
+
+input[type="text"], input[type="password"] {
+    background-color: #000036;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-bottom: 1px solid #daa520;
+}
+
+input::placeholder {
+    color: #ffffff7c;
+    font-style: italic;
+}
+
+.div-button {
+    width: 210px;
+    margin: 10px auto;
+}
+
+.button {
+    width: 100px;
+    display: inline-block;
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+.button:hover {
+    background-color: #daa520;
+    box-shadow: 0px 0px 5px #daa520;
+}
+
+@media screen and (min-width: 600px) {
+    fieldset {
+        width: 600px;
+    }
 }
